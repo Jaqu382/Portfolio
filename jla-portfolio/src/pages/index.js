@@ -10,14 +10,14 @@ import 'slick-carousel/slick/slick-theme.css'
 const portfolioPieces = [
   {
     title: 'My Awesome Project',
-    image: '../images/underConst.jpg',
+    image: '../public/images/underConst.jpg',
     description: 'This is a description of my awesome project.',
     technologies: ['React', 'Next.js', 'CSS'],
     githubLink: 'https://github.com/myusername/my-awesome-project',
   },
   {
     title: 'My Cool Project',
-    image: '../images/underConst.jpg',
+    image: '../public/images/underConst.jpg',
     description: 'This is a description of my cool project.',
     technologies: ['React', 'Redux', 'Node.js'],
     githubLink: 'https://github.com/myusername/my-cool-project',
