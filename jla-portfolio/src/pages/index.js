@@ -13,20 +13,21 @@ import Footer from '../components/Footer';
 import styles from './Home.module.css'
 
 
+
 const portfolioPieces = [
   {
-    title: 'My Awesome Project',
+    title: 'My Portfolio website',
     image: '/underConst.jpg', // use the path to the image in the public folder
-    description: 'This is a description of my awesome project.',
+    description: 'This website was created using React and Next.js. The styling was done using CSS and it is hosted on github pages. The intent behind this website is not only to have it be a record of the work I do, but to evolve as I improve as a developer.',
     technologies: ['React', 'Next.js', 'CSS'],
-    githubLink: 'https://github.com/myusername/my-awesome-project',
+    githubLink: 'https://github.com/Jaqu382/Portfolio.git',
   },
   {
-    title: 'My Cool Project',
+    title: 'KnightsCrest',
     image: '/underConst.jpg', // use the path to the image in the public folder
-    description: 'This is a description of my cool project.',
-    technologies: ['ReactNative', 'Redux', 'Node.js'],
-    githubLink: 'https://github.com/myusername/my-cool-project',
+    description: 'Created in group as part of my DIG4172 senior workshop class at UCF. This is a mobile app project that attempted to emulate the features of a physical student ID on a digital platform. The app was build using react native and utilized redux to pass data stored in a firebase realtime database between components of the app. ',
+    technologies: ['ReactNative', 'Redux', 'Firebase', 'Node.js'],
+    githubLink: 'https://github.com/Jaqu382/KC_Mobile.git',
   },
   // add more portfolio pieces as needed
 ]
