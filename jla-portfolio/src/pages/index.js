@@ -22,7 +22,7 @@ const portfolioPieces = [
     technologies: ['React', 'Next.js', 'CSS'],
     githubLink: 'https://github.com/Jaqu382/Portfolio.git',
   },
-  {
+  {s
     title: 'KnightsCrest',
     image: '/underConst.jpg', // use the path to the image in the public folder
     description: 'Created in group as part of my DIG4172 senior workshop class at UCF. This is a mobile app project that attempted to emulate the features of a physical student ID on a digital platform. The app was build using react native and utilized redux to pass data stored in a firebase realtime database between components of the app. ',

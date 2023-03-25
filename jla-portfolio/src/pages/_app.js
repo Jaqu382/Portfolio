@@ -7,9 +7,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <NavigationMenu/>
-      <main>
+      <Main>
         <Component {...pageProps} />
-      </main>
+      </Main>
     </>
   );
 }
