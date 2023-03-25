@@ -16,11 +16,11 @@ const NavigationMenu = () => {
         </li>
         <li>
           <Link 
-          to="about" 
+          to="skills" 
           smooth={true} 
           duration={500}
           activeClass="active">
-            About
+            Skills
           </Link>
         </li>
         <li>

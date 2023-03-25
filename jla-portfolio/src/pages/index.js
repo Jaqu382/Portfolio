@@ -10,16 +10,16 @@ import 'slick-carousel/slick/slick-theme.css'
 const portfolioPieces = [
   {
     title: 'My Awesome Project',
-    image: '../public/images/underConst.jpg',
+    image: '/underConst.jpg', // use the path to the image in the public folder
     description: 'This is a description of my awesome project.',
     technologies: ['React', 'Next.js', 'CSS'],
     githubLink: 'https://github.com/myusername/my-awesome-project',
   },
   {
     title: 'My Cool Project',
-    image: '../public/images/underConst.jpg',
+    image: '/underConst.jpg', // use the path to the image in the public folder
     description: 'This is a description of my cool project.',
-    technologies: ['React', 'Redux', 'Node.js'],
+    technologies: ['ReactNative', 'Redux', 'Node.js'],
     githubLink: 'https://github.com/myusername/my-cool-project',
   },
   // add more portfolio pieces as needed
@@ -60,6 +60,9 @@ const settings = {
   ]
 }
 function Home() {
+  const downloadResume = () => {
+    window.open('/resume.pdf', '_blank');
+  };
   return (
     <>
       <Head>
@@ -67,18 +70,20 @@ function Home() {
       </Head>
       <div className="container">
         <div className="content">
-          <h1>Juan Luis Aquino</h1>
-          <Element name="Home" className="page-transition">  
+          <h1>Juan Luis Aquino</h1>            
+          <h2>He/Him/His</h2>
+          <Element name="home" className="page-transition"> 
             <p>
               Hey, my name is Juan, a recently graduated web developer with a passion for crafting 
               elegant and user-friendly web applications. I am always eager to explore new technologies 
               and continually expanding my developer's toolkit. As the field of development rapidly evolves, 
-              I remain vigilant in keeping up with the latest tools and techniques to deliver high-performance 
-              solutions to clients. If you're seeking a reliable and committed developer for your project, I'm here to help.
+              I'm constantly keeping up with the latest tools and techniques to deliver high-performance 
+              solutions to clients. If you're seeking a reliable and committed developer for your project, I'm your guy!
             </p>
+            
           </Element>
-          <h1>About</h1>
-          <Element name="about" className="page-transition">
+          <h1>Skills</h1>
+          <Element name="skills" className="page-transition">
             
           </Element>
           <h1>Projects</h1>
@@ -99,8 +104,7 @@ function Home() {
           </Element>
           <h1>Resume</h1>
           <Element name="resume" className="page-transition">
-            
-            <p>Download my resume...</p>
+            <button onClick={downloadResume}>Download Resume</button>
           </Element>
 
         </div>
