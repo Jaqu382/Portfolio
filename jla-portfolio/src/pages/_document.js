@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-s
+
 export default function Document() {
   return (
     <Html lang="en">
