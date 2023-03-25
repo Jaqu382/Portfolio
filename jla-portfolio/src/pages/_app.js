@@ -1,5 +1,14 @@
-import '@/styles/globals.css'
+import React from 'react';
+import NavigationMenu from '../components/NavigationMenu';
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <NavigationMenu/>
+        <Component {...pageProps} />
+    </>
+  );
 }
+
+export default MyApp;
