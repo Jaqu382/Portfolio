@@ -13,36 +13,20 @@ const NavigationMenu = () => {
           activeClass="active">
             Home
           </Link>
-        </li>
+        </li> 
         <li>
-          <Link 
-          to="skills" 
-          smooth={true} 
-          duration={500}
-          activeClass="active">
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link 
-          to="projects" 
-          smooth={true} 
-          duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link 
-          to="resume" 
-          smooth={true} 
-          duration={500}>
+          <a href="/Resume2023.pdf" target="_blank" rel="noopener noreferrer">
             Resume
-          </Link>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:ja.juan.aquino.ja@gmail.com">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
   );
 };
 
-
-export default NavigationMenu;  
+export default NavigationMenu;

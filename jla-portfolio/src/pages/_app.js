@@ -6,7 +6,7 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <NavigationMenu />
+      <NavigationMenu/>
       <main>
         <Component {...pageProps} />
       </main>

@@ -1,4 +1,8 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { useRef } from 'react'
+
+import { useState } from 'react'
 import Head from 'next/head'
 import { Element } from 'react-scroll'
 import PortfolioPieceCard from '../components/PortfolioPieceCard'
@@ -6,6 +10,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Footer from '../components/Footer';
+import styles from './Home.module.css'
 
 
 const portfolioPieces = [
@@ -61,9 +66,28 @@ const settings = {
   ]
 }
 function Home() {
+  // Download resume
   const downloadResume = () => {
     window.open('/Resume2023.pdf', '_blank');
   };
+
+  // Hero image animation
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const img = imageRef.current;
+    if (img.complete) {
+      setImageLoaded(true);
+    }
+  }, []);
+
+  const fadeIn = {
+    opacity: imageLoaded ? 1 : 0,
+    transition: 'opacity 0.5s ease-in-out',
+  };
+
+
   return (
     <>
       <Head>
@@ -71,16 +95,23 @@ function Home() {
       </Head>
       <div className="container">
         <div className="content">
+          <Element id='home'name="home" className={styles.profileImageWrapper}>
+            <img
+              src="/Aquino_juan.jpg"
+              alt="Juan Luis Aquino"
+              style={{ width: '200px', height: '200px', borderRadius: '50%', ...fadeIn }}
+              ref={imageRef}
+            />
+          </Element>
           <h1>Juan Luis Aquino</h1>
-          <Element name="home" className="page-transition"> 
-            <p>
+          <Element id='bio' name='bio' className="page-transition"> 
+            <p className='main-text'>
               Hey, my name is Juan, a recently graduated web developer with a passion for crafting 
               elegant and user-friendly web applications. I am always eager to explore new technologies 
               and continually expanding my developer's toolkit. As the field of development rapidly evolves, 
               I'm constantly keeping up with the latest tools and techniques to deliver high-performance 
-              solutions to clients. If you're seeking a reliable and committed developer for your project, I'm your guy!
-            </p>
-            
+              solutions to clients. If you're looking for a reliable and committed developer for your project, I'm your guy!
+            </p>            
           </Element>
           <h1>Skills</h1>
           <Element name="skills" className="page-transition">
@@ -101,11 +132,6 @@ function Home() {
               ))}
             </Slider>
           </Element>
-          <h1>Resume</h1>
-          <Element name="resume" className="page-transition">
-            <button onClick={downloadResume}>Download Resume</button>
-          </Element>
-
         </div>
       </div>
       <Footer></Footer>
