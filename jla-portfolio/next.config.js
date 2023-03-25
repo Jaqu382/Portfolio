@@ -1,7 +1,5 @@
-const isProd = process.env.NODE_ENV === 'production'
-
 module.exports = {
-  reactStrictMode: true,
-  basePath: isProd ? '/Portfolio' : '',
-  assetPrefix: isProd ? '/Portfolio/' : '',
-}
+  // Use the prefix for the GitHub Pages repository
+  basePath: process.env.NODE_ENV === "production" ? "/Portfolio" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/Portfolio" : "",
+};
