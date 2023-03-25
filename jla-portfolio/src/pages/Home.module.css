@@ -46,7 +46,7 @@
   animation: glow 2s ease-in-out infinite;
 }
 .container {
-  height: 100vh;
+  height: fit-content;
   display: flex;
   justify-content: center;
   margin-bottom: 100px;

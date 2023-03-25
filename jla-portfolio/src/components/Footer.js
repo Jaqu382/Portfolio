@@ -14,7 +14,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className={styles.footer__link}
         >
-          <img src="/github_white.png" alt="GitHub" width="23" height="24" />
+          <img src="/github_white.png" alt="GitHub" width="30" height="30" />
         </a>
         <a
           href="https://www.linkedin.com/in/your-linkedin-username"
@@ -22,7 +22,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className={styles.footer__link}
         >
-          <img src="/linkedIn_logo.png" alt="LinkedIn" width="24" height="24"/>
+          <img src="/linkedIn_logo.png" alt="LinkedIn" width="30" height="30"/>
         </a>
         <a
           href="https://twitter.com/Jaqu_Remix"
@@ -30,7 +30,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className={styles.footer__link}
         >
-          <img src="/twitter.png" alt="Twitter" width="24" height="24"/>
+          <img src="/twitter.png" alt="Twitter" width="30" height="30"/>
         </a>
       </div>
       <div className={styles.footer__copyright}>

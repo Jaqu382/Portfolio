@@ -37,7 +37,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true, // enable center mode
-  centerPadding: '10%', // add padding to the left and right of the current slide
+  centerPadding: '15%', // add padding to the left and right of the current slide
   responsive: [
     {
       breakpoint: 1024,
@@ -65,7 +65,9 @@ const settings = {
     }
   ]
 }
+
 function Home() {
+
   // Download resume
   const downloadResume = () => {
     window.open('/Resume2023.pdf', '_blank');
@@ -112,11 +114,8 @@ function Home() {
               I'm constantly keeping up with the latest tools and techniques to deliver high-performance 
               solutions to clients. If you're looking for a reliable and committed developer for your project, I'm your guy!
             </p>            
-          </Element>
-          <h1>Skills</h1>
-          <Element name="skills" className="page-transition">
-          </Element>
-          <h1>Projects</h1>
+          </Element>        
+          <h1>Check out my projects</h1>
           <Element name="projects" className="page-transition">
             <Slider {...settings}>
               {portfolioPieces.map((piece, index) => (
@@ -132,9 +131,21 @@ function Home() {
               ))}
             </Slider>
           </Element>
+          <h1>About me</h1>
+          <Element name="skills" className="page-transition">
+            <p className='main-text'>I'm pretty solid with essential web development languages like HTML, CSS, and JavaScript. 
+              I'm also comfortable working with front-end and back-end frameworks like React, ReactNative, 
+              Node.js, and Express, which allow me to build some pretty cool web applications. 
+              I've had hands-on experience using Git, Agile methodology, RESTful APIs, and database management systems. 
+              I'm also an obsessive problem-solver and pay great attention to detail. 
+              I consider myself a team player, and love working with others to develop interesting tools and products.
+              Some of my more recent interests include machine learning, prompt manipulation, 3D modeling, and containerized applications.
+              Outside of coding I also enjoy playing video games and Dungeons and Dragons whenever my schedule allows for it.</p>
+          </Element>
         </div>
       </div>
       <Footer></Footer>
+      
     </>
   );
 }

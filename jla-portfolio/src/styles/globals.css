@@ -31,7 +31,7 @@ main {
 
 /*Transitions*/
 .page-transition {
-  width: 50%;
+  width: 60%;
   padding: 10px;
   box-sizing: border-box;
   text-align: left;
@@ -60,7 +60,7 @@ main {
   height: fit-content;
   display: flex;
   justify-content: center;
-  
+  padding-bottom: 10px;
   background: linear-gradient(to bottom, #141e2f, #000000);
 }
 .content {
@@ -132,4 +132,4 @@ li:hover {
 li.active {
   border-color: #1de9b6;
   background-color: transparent;
-}
+} 
