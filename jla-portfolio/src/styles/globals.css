@@ -3,10 +3,21 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: 'Gruppo-Regular';
+  src: url('/fonts/Gruppo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1 { 
+  font-size: 48px;
+  font-family: 'Gruppo-Regular', sans-serif;
+}
 main {
   padding-top: 80px; /* set the padding to match the height of the menu */
   background-color: #141e2f;
 }
+
 /*Transitions*/
 .page-transition {
   width: 50%;

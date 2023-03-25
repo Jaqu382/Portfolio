@@ -5,6 +5,7 @@ import PortfolioPieceCard from '../components/PortfolioPieceCard'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import Footer from '../components/Footer';
 
 
 const portfolioPieces = [
@@ -61,7 +62,7 @@ const settings = {
 }
 function Home() {
   const downloadResume = () => {
-    window.open('/resume.pdf', '_blank');
+    window.open('/Resume2023.pdf', '_blank');
   };
   return (
     <>
@@ -70,8 +71,7 @@ function Home() {
       </Head>
       <div className="container">
         <div className="content">
-          <h1>Juan Luis Aquino</h1>            
-          <h2>He/Him/His</h2>
+          <h1>Juan Luis Aquino</h1>
           <Element name="home" className="page-transition"> 
             <p>
               Hey, my name is Juan, a recently graduated web developer with a passion for crafting 
@@ -84,7 +84,6 @@ function Home() {
           </Element>
           <h1>Skills</h1>
           <Element name="skills" className="page-transition">
-            
           </Element>
           <h1>Projects</h1>
           <Element name="projects" className="page-transition">
@@ -109,6 +108,7 @@ function Home() {
 
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
