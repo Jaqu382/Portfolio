@@ -1,17 +1,5 @@
-import { Main } from 'next/document';
-import React from 'react';
-import NavigationMenu from '../components/NavigationMenu';
-import '../styles/globals.css';
+import '@/styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <NavigationMenu/>
-      <main>
-        <Component {...pageProps} />
-      </main>
-    </>
-  );
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
-
-export default MyApp;
