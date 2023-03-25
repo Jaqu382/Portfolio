@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useRef } from 'react'
-
 import { useState } from 'react'
 import Head from 'next/head'
 import { Element } from 'react-scroll'
