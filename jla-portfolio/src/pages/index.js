@@ -10,7 +10,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import Footer from '../components/Footer';
-import styles from '/styles/Home.module.css'; 
+import styles from '/styles/Home.module.css';
 
 
 

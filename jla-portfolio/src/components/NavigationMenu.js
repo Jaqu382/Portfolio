@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import styles from '/styles/NavigationMenu.module.css'
+import styles from '../../styles/NavigationMenu.module.css'
 const NavigationMenu = () => {
   return (
     <header className={styles.navigationMenu} aria-label="Main navigation">

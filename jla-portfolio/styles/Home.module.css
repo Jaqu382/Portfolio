@@ -1,4 +1,15 @@
-
+@font-face {
+  font-family: 'Gruppo-regular';
+  src: url('/fonts/Gruppo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .profileImageWrapper {
     width: 300px;
     height: 300px;

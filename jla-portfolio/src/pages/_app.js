@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationMenu from '../components/NavigationMenu';
-import '/styles/globals.css';
+import '../../public/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
