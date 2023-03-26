@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 .links {
   display: flex;
   justify-content: center;
@@ -40,7 +35,7 @@
   display: inline-block;
   padding: 0 1.5rem;
   height: 100%;
-  font-family: 'Roboto-Regular', sans-serif;
+
   color: white;
   text-decoration: none;
   transition: background-color 0.2s ease-out, border-radius 0.2s ease-out;
