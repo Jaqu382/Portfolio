@@ -6,8 +6,18 @@
 
   html,
   body {
-    background-image: linear-gradient(to bottom, #2F80ED, #1A4C8B), url('pixelated-pattern.png');
-    background-size: 25% 25%;
-    background-position: center;
-    background-repeat: repeat;
+    background-image: linear-gradient(to bottom, #0F1D37, #000000);
   }
+  @font-face {
+    font-family: 'Gruppo-regular';
+    src: url('/Gruppo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

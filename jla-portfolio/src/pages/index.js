@@ -97,9 +97,8 @@ function Home() {
       </Head>
       <div className={styles.container}>
         <header>
-          <h1 className="sr-only">Welcome to my portfolio</h1>
+          <h1 className={styles.sectionTitle}>Juan Luis Aquino</h1>
         </header>
-        <h2 className={styles.sectionTitle}>Juan Luis Aquino</h2>
         <Element id='home' name="home" className={styles.profileImageWrapper}>
         <img
           src="/Aquino_juan.jpg"

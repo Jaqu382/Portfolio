@@ -1,3 +1,4 @@
+
 .profileImageWrapper {
     width: 250px;
     height: 250px;
@@ -18,12 +19,14 @@
     height: fit-content;
     margin: auto;
     width: 50%;
-    background-color: #f1f1f1;
   }
   .sectionTitle {
+    font-family: 'Gruppo-regular';
+    font-size: 62px;
     margin-top: 3rem;
     margin-bottom: 1rem;
     text-align: center;
+    color: #f1f1f1;
   }
   .bio,
   .aboutMe {
@@ -36,4 +39,6 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
+    color: #f1f1f1;
+    font-family: 'Roboto-Regular';
   }
