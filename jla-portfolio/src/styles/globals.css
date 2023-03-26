@@ -4,8 +4,10 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+  html,
+  body {
+    background-image: linear-gradient(to bottom, #2F80ED, #1A4C8B), url('pixelated-pattern.png');
+    background-size: 25% 25%;
+    background-position: center;
+    background-repeat: repeat;
+  }

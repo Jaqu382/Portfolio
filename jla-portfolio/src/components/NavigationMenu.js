@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-scroll";
+import styles from '../styles/NavigationMenu.module.css';
 
 const NavigationMenu = () => {
   return (
-    <nav className="links">
+    <nav className={styles.links}>
       <ul>
         <li>
           <Link 
           to="home" 
           smooth={true} 
           duration={500}
-          activeClass="active">
+          activeClass={styles.active}>
             Home
           </Link>
         </li> 
@@ -29,4 +30,4 @@ const NavigationMenu = () => {
   );
 };
 
-export default NavigationMenu;  
+export default NavigationMenu;

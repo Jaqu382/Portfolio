@@ -1,0 +1,39 @@
+.profileImageWrapper {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 25%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  .profileImageWrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .container {
+    padding-top: 62px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: auto;
+    width: 50%;
+    background-color: #f1f1f1;
+  }
+  .sectionTitle {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .bio,
+  .aboutMe {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .mainText {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+  }
