@@ -2,11 +2,15 @@
   "name": "jla-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Jaqu382.github.io/Portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "^13.2.4",
@@ -15,5 +19,8 @@
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
