@@ -117,20 +117,23 @@ function Home() {
         </Element>
         <h2 className={styles.sectionTitle}>Check out my projects</h2>
         <Element name="projects" className={styles.projects}>
-          <Slider {...settings}>
-            {portfolioPieces.map((piece, index) => (
-              <div key={index} className={styles.carouselItem}>
-                <PortfolioPieceCard
-                  title={piece.title}
-                  image={piece.image}
-                  description={piece.description}
-                  technologies={piece.technologies}
-                  githubLink={piece.githubLink}
-                />
-              </div>
-            ))}
-          </Slider>
-        </Element>
+  <div className={styles.sliderWrapper}>
+    <Slider {...settings}>
+      {portfolioPieces.map((piece, index) => (
+        <div key={index} className={styles.carouselItem}>
+          <PortfolioPieceCard
+            title={piece.title}
+            image={piece.image}
+            description={piece.description}
+            technologies={piece.technologies}
+            githubLink={piece.githubLink}
+          />
+        </div>
+      ))}
+    </Slider>
+  </div>
+</Element>
+
         <h2 className={styles.sectionTitle}>About me</h2>
         <Element name="skills" className={styles.aboutMe}>
           <p className={styles.mainText}>

@@ -1,8 +1,9 @@
 
 .profileImageWrapper {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
+    margin-bottom: 20px;
     border-radius: 25%;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -13,12 +14,12 @@
     height: auto;
   }
   .container {
-    padding-top: 62px;
+    padding-top: 52px;
     justify-content: center;
     align-items: center;
     height: fit-content;
     margin: auto;
-    width: 50%;
+    width: auto;
   }
   .sectionTitle {
     font-family: 'Gruppo-regular';
@@ -41,4 +42,16 @@
     max-width: 700px;
     color: #f1f1f1;
     font-family: 'Roboto-Regular';
+  }
+  .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .sliderWrapper {
+    width: 100%;
+    max-width: 1100px; /* adjust as needed */
+    margin: 0 auto;
   }

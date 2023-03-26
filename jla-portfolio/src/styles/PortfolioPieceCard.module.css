@@ -9,7 +9,7 @@
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #f7b733;
 }
 .portfolio-piece-card__image {
   max-width: 100%;
@@ -31,9 +31,11 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
+  font-family: 'Gruppo-regular';
 }
 
 .portfolio-piece-card__description {
+  font-family: 'Roboto-Regular';
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -46,6 +48,7 @@
 }
 
 .portfolio-piece-card__tag {
+  font-family: 'Roboto-Regular';
   font-size: 14px;
   padding: 5px 10px;
   margin-right: 10px;

@@ -1,32 +1,41 @@
-import React, { useEffect } from 'react';
-import { Link } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-scroll';
 import styles from '../styles/NavigationMenu.module.css';
 
 const NavigationMenu = () => {
   return (
-    <nav className={styles.links}>
-      <ul>
-        <li>
-          <Link 
-          to="home" 
-          smooth={true} 
-          duration={500}
-          activeClass={styles.active}>
-            Home
-          </Link>
-        </li> 
-        <li>
-          <a href="/Resume2023.pdf" target="_blank" rel="noopener noreferrer">
-            Resume
-          </a>
-        </li>
-        <li>
-          <a href="mailto:ja.juan.aquino.ja@gmail.com">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <header className={styles.navigationMenu} aria-label="Main navigation">
+      <nav className={styles.links}>
+        <ul>
+          <li>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              activeClass={styles.active}
+              tabIndex={0}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <a
+              href="/Resume2023.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex={0}
+            >
+              Resume
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ja.juan.aquino.ja@gmail.com" tabIndex={0}>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
