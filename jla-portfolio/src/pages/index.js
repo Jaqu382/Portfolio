@@ -8,23 +8,23 @@ import PortfolioPieceCard from '../components/PortfolioPieceCard'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import Footer from '../components/Footer';
 
-import styles from '../styles/Home.module.css'; 
+import Footer from '../components/Footer';
+import styles from '/styles/Home.module.css'; 
 
 
 
 const portfolioPieces = [
   {
     title: 'Portfolio website',
-    image: '/underConst.jpg', // use the path to the image in the public folder
+    image: 'images/underConst.jpg', // use the path to the image in the public folder
     description: 'This website was created using React and Next.js. The styling was done using CSS and it is hosted on github pages. The intent behind this website is not only to have it be a record of the work I do, but to evolve as I improve as a developer.',
     technologies: ['React', 'Next.js', 'CSS'],
     githubLink: 'https://github.com/Jaqu382/Portfolio.git',
   },
   {
     title: 'KnightsCrest',
-    image: '/underConst.jpg', // use the path to the image in the public folder
+    image: 'images/underConst.jpg', // use the path to the image in the public folder
     description: 'Created in group as part of my DIG4172 senior workshop class at UCF. This is a mobile app project that attempted to emulate the features of a physical campus card on a digital platform. The app was build using react native and utilized redux to pass data stored in a firebase realtime database between components of the app. ',
     technologies: ['ReactNative', 'Redux', 'Firebase', 'Node.js'],
     githubLink: 'https://github.com/Jaqu382/KC_Mobile.git',
@@ -101,7 +101,7 @@ function Home() {
         </header>
         <Element id='home' name="home" className={styles.profileImageWrapper}>
         <img
-          src="/Aquino_juan.jpg"
+          src="images/Aquino_juan.jpg"
           alt="Juan Luis Aquino, a web developer with a passion for crafting elegant and user-friendly web applications."
           ref={imageRef}
         />

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import styles from '../styles/NavigationMenu.module.css';
-
+import styles from '/styles/NavigationMenu.module.css'
 const NavigationMenu = () => {
   return (
     <header className={styles.navigationMenu} aria-label="Main navigation">
@@ -20,7 +19,7 @@ const NavigationMenu = () => {
           </li>
           <li>
             <a
-              href="/Resume2023.pdf"
+              href="files/Resume2023.pdf"
               target="_blank"
               rel="noopener noreferrer"
               tabIndex={0}

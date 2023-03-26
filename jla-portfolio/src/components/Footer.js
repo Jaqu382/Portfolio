@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Footer.module.css';
+import styles from '/styles/Footer.module.css';
 
 const Footer = () => {
   return (
@@ -9,15 +9,15 @@ const Footer = () => {
       </div>
       <div className={styles.footer__links}>
         <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" className={styles.footer__link}>
-          <img src="/github_white.png" alt="GitHub" width="30" height="30" />
+          <img src="images/github_white.png" alt="GitHub" width="30" height="30" />
           <span>GitHub</span>
         </a>
         <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" className={styles.footer__link}>
-          <img src="/linkedIn_logo.png" alt="LinkedIn" width="30" height="30"/>
+          <img src="images/linkedIn_logo.png" alt="LinkedIn" width="30" height="30"/>
           <span>LinkedIn</span>
         </a>
         <a href="https://twitter.com/Jaqu_Remix" target="_blank" rel="noopener noreferrer" className={styles.footer__link}>
-          <img src="/twitter.png" alt="Twitter" width="30" height="30"/>
+          <img src="images/twitter.png" alt="Twitter" width="30" height="30"/>
           <span>Twitter</span>
         </a>
       </div>

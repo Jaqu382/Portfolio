@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/PortfolioPieceCard.module.css';
+import styles from '/styles/PortfolioPieceCard.module.css';
 
 const PortfolioPieceCard = ({ title, image, description, technologies, githubLink }) => {
   return (
@@ -13,7 +13,7 @@ const PortfolioPieceCard = ({ title, image, description, technologies, githubLin
             <span key={index} className={styles['portfolio-piece-card__tag']}>{tag}</span>
           ))}
           <a href={githubLink} target="_blank" rel="noopener noreferrer"> 
-            <img className={styles['github-link']} src="/github_white.png" alt="GitHub Link" /> 
+            <img className={styles['github-link']} src="images/github_white.png" alt="GitHub Link" /> 
           </a>
         </div>
       </div>
